@@ -1,0 +1,18 @@
+/*
+how to make:
+g++ -std=c++17 NAME.cpp -lm -o NAME
+
+standard makefile:
+*/
+
+TARGETS = <List of target names here>
+CXX = g++
+CPPFLAGS = -std=c++17
+LDLIBS=-lm
+
+all: $(TARGETS)
+
+clean:
+	$(RM) $(TARGETS)
+
+.PHONY: all clean
